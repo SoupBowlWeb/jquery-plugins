@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<style>
+		body {
+			padding-top: 120px;
+		}
+
+		#home, #profile, #messages {
+			min-height: 1000px;
+			background: red;
+			margin-bottom: 100px;
+		}
+	</style>
+</head>
+<body>
+
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+  		<div class="container">
+		    <ul class="nav nav-tabs">
+				<li role="presentation" class="active"><a href="#home">Home</a></li>
+				<li role="presentation"><a href="#profile">Profile</a></li>
+				<li role="presentation"><a href="#messages">Messages</a></li>
+			</ul>
+  		</div>
+	</nav>
+
+	<div class="container">
+
+		<div id="home">
+			
+			<h1>This is the home div</h1>
+
+		</div>
+
+		<div id="profile">
+			
+			<h1>This is the profile div</h1>
+
+		</div>
+
+		<div id="messages">
+			
+			<h1>This is the messages div</h1>
+
+		</div>
+
+
+	</div>
+	
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$('body').scrollspy({target: '#navigation'});
+	</script>
+
+</body>
+</html>
