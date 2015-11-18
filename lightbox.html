@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lightbox Photo Gallery</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+
+	<style>
+		#gallery {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		#gallery li {
+			float: left;
+			margin: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+		<ul id="gallery">
+			<li>
+				<a href="http://lorempixel.com/600/600/people/1" data-lightbox="image-1" data-title="My First Image">
+					<img src="http://lorempixel.com/200/200/people/1" alt="" />
+				</a>
+			</li>
+
+			<li>
+				<a href="http://lorempixel.com/600/600/people/2" data-lightbox="image-1" data-title="My Second Image">
+										<img src="http://lorempixel.com/200/200/people/2" alt="" />
+				</a>
+			</li>
+
+			<li>
+				<a href="http://lorempixel.com/600/600/people/3" data-lightbox="image-1" data-title="My caption">
+					<img src="http://lorempixel.com/200/200/people/3" alt="" />
+				</a>
+			</li>
+
+			<li>
+				<a href="http://lorempixel.com/600/600/people/4" data-lightbox="image-1" data-title="My caption">
+										<img src="http://lorempixel.com/200/200/people/4" alt="" />
+				</a>
+			</li>
+		</ul>
+
+	</div>
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script>
+    	lightbox.option({
+      		'resizeDuration': 200,
+      		'wrapAround': true
+    	})
+	</script>
+
+</body>
+</html>
